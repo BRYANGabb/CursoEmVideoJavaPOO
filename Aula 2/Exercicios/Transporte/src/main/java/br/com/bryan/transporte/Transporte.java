@@ -22,6 +22,7 @@ public class Transporte {
         bryan.passarCatraca();
         bryan.passarCatraca();
         bryan.passarCatraca();
-        bryan.statusGeral();
+        bryan.statusPasse();
+        
     }
 }

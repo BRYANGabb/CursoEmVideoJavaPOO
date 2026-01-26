@@ -20,9 +20,9 @@ public class Musica {
         
         InstrumentoMusical guitarra = new InstrumentoMusical();
         
-        baixo.cor = "Vermelho";
-        baixo.conectar();
-        baixo.status();
-        baixo.tocar();
+        guitarra.cor = "Vermelho";
+        guitarra.conectar();
+        guitarra.status();
+        guitarra.tocar();
     }
 }
