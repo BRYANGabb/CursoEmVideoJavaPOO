@@ -24,14 +24,13 @@ public class Funcionario {
         return salario;
     }
     
-    public void reajusteSalario(float valor){
-        float reajusteSalario = valor;
-        if (reajusteSalario > getSalario()){
-            this.salario = reajusteSalario;
-            System.out.printf("Novo salário: %.3f", getSalario());
-        } else {
-            System.out.println("Salário Inválido!");
-            System.out.println("Reajuste menor ou igual do salário!");
+    public void reajusteSalario(int valor){
+        float reajuste = (float) (salario * valor) / 100;
+        if(valor >= 1){
+            salario += reajuste;
+            System.out.printf("Valor do salário com reajuste: %.3f\n", salario);
+        } else{
+            System.out.println("Reajuste Inválido! Reajuste com valor negativo!");
         }
     }
     
