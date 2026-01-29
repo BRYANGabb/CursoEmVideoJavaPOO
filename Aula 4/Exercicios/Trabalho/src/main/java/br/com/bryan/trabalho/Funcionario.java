@@ -24,9 +24,9 @@ public class Funcionario {
         return salario;
     }
     
-    public void reajusteSalario(int valor){
-        float reajuste = (float) (salario * valor) / 100;
-        if(valor >= 1){
+    public void reajusteSalarioEmPorcentagem(float valor){
+        if(valor > 0){
+            float reajuste = (float) (salario * valor) / 100;
             salario += reajuste;
             System.out.printf("Valor do salário com reajuste: %.3f\n", salario);
         } else{
