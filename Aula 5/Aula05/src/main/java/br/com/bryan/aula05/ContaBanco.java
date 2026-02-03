@@ -17,10 +17,12 @@ public class ContaBanco {
         if (tipo.equalsIgnoreCase("cc")){
             this.saldo = 50f;
             this.status = true;
-        }
-        if (tipo.equalsIgnoreCase("CP")){
+        } else if (tipo.equalsIgnoreCase("CP")){
             this.saldo = 150f;
             this.status = true;
+        } else{
+            System.out.println("INVÁLIDO");
+            System.out.println("Não informou o tipo da conta!");
         }
     }
     
@@ -28,6 +30,13 @@ public class ContaBanco {
         if (this.getStatus() == true){
             if (this.getSaldo() == 0){
                 this.status = false;
+                System.out.println("Conta encerrada!");
+            } else if (this.getSaldo() > 0){
+                System.out.println("ERRO");
+                System.out.println("Saldo positivo!");
+            } else{
+                System.out.println("ERRO");
+                System.out.println("Saldo negativo!");
             }
         }
     }
@@ -36,7 +45,12 @@ public class ContaBanco {
         if (getStatus() == true){
             if (valor > 0){
                 this.saldo += valor;
+            } else{
+                System.out.println("Deposito menor que zero!!");
             }
+        } else{
+            System.out.println("INVÁLIDO: ");
+            System.out.println("Status da conta: Fechado");
         }
     }
     
@@ -44,7 +58,12 @@ public class ContaBanco {
         if (getStatus() == true){
             if (getSaldo() >= valor){
                 this.saldo -= valor;
+            } else{
+                System.out.println("Saldo insuficiente!");
             }
+        } else{
+            System.out.println("INVÁLIDO: ");
+            System.out.println("Status da conta: Fechado");
         }
     }        
             
@@ -53,13 +72,19 @@ public class ContaBanco {
             if(this.getTipo().equalsIgnoreCase("cc")){
                 if (this.getSaldo() >= 20){
                     this.saldo -= 20f;
+                } else{
+                    System.out.println("Saldo insuficiente!");
                 }
-            }
-            if(this.getTipo().equalsIgnoreCase("cp")){
+            } else if(this.getTipo().equalsIgnoreCase("cp")){
                 if (this.getSaldo() >= 20){
                     this.saldo -= 20f;
+                }else {
+                    System.out.println("Saldo insuficiente!");
                 }
             }
+        } else{
+            System.out.println("INVÁLIDO: ");
+            System.out.println("Status da conta: Fechado");
         }
     } 
     
