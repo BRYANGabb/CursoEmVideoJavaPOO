@@ -25,6 +25,9 @@ public class TestePersonagem {
         personagem[0] = new Personagem("Brya", 100);
         personagem[1] = new Personagem("Gabriel", 230);
         
+        personagem[0].sofrerDano(400);
+        personagem[1].sofrerDano(120);
+        
         
     }
 }
