@@ -13,10 +13,9 @@ public class Aula09 {
         
         livro.detalhes();
         livro.abrir();
-        livro.folhear(229);
-        livro.avancarPagina();
-        livro.voltarPagina();
-        livro.fechar();
+        livro.folhear(150);
         livro.detalhes();
+        livro.verificarProgresso();
+        
     }
 }

@@ -31,6 +31,11 @@ public class Livro implements Publicacao {
         System.out.println("Leitor: " + this.getLeitor().getNome());
     }
     
+    public void verificarProgresso(){
+        int progresso = (this.getPagAtual() * 100) / this.getTotalPaginas();
+        System.out.println("Você já leu " + progresso +"% do livro");
+    }
+    
     public String getTitulo() {
         return titulo;
     }
@@ -103,8 +108,18 @@ public class Livro implements Publicacao {
 
     @Override
     public void folhear(int pagina) {
-        this.setPagAtual(pagina);
-        System.out.println("Página atual: " + this.getPagAtual());
+        if (this.getAberto()){
+            if (pagina <= this.getTotalPaginas() || pagina > 0){
+                this.setPagAtual(pagina);
+                System.out.println("Página atual: " + this.getPagAtual());
+            } else {
+                System.out.println("Número de páginas inválido.");
+                System.out.println("Total de páginas: " + this.getTotalPaginas());
+            }
+        } else{
+            System.out.println("Livro está fechado");
+        }
+        
     }
 
     @Override
