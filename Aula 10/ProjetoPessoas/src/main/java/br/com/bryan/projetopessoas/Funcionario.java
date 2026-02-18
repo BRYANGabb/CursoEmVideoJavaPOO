@@ -5,10 +5,14 @@ public class Funcionario extends Pessoa{
     private String setor;
     private boolean trabalhando;
     
-    public void mudarTrabalho(String trabalho){
-        this.setSetor(trabalho);
+    public void mudarTrabalho(){
+        this.abrirChamado();
     }
 
+    public void abrirChamado(){
+        this.trabalhando = ! this.trabalhando;
+    }
+    
     public String getSetor() {
         return setor;
     }

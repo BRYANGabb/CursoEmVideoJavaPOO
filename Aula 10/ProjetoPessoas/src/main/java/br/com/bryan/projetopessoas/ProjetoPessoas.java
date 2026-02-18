@@ -57,7 +57,8 @@ public class ProjetoPessoas {
         p4.fazerAniversario();
         p4.setTrabalhando(false);
         p4.setSetor("Limpeza");
-        p4.mudarTrabalho("Gerente");
+        p4.mudarTrabalho();
+        p4.mudarTrabalho();
         
         System.out.println(p4.getNome());
         System.out.println(p4.getIdade());
