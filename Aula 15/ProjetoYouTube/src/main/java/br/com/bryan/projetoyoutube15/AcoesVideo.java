@@ -1,5 +1,5 @@
 
-package br.com.bryan.mavenproject1;
+package br.com.bryan.projetoyoutube15;
 
 public interface AcoesVideo {
     public abstract void play();

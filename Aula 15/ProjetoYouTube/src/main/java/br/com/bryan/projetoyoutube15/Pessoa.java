@@ -1,5 +1,5 @@
 
-package br.com.bryan.mavenproject1;
+package br.com.bryan.projetoyoutube15;
 
 public abstract class Pessoa {
     protected String nome;

@@ -1,5 +1,5 @@
 
-package br.com.bryan.mavenproject1;
+package br.com.bryan.projetoyoutube14;
 
 public class Video implements AcoesVideo{
     private String titulo;

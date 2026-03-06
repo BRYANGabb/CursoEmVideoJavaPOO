@@ -1,7 +1,7 @@
 
-package br.com.bryan.mavenproject1;
+package br.com.bryan.projetoyoutube14;
 
-public class Mavenproject1 {
+public class ProjetoYouTube{
 
     public static void main(String[] args) {
        Video v[] = new Video[2]; 
