@@ -1,8 +1,8 @@
 # CursoEmVideoJavaPOO
 
-Repositório com os códigos e exercícios desenvolvidos durante o curso de **Java Orientado a Objetos** do professor :contentReference[oaicite:0]{index=0} no canal :contentReference[oaicite:1]{index=1}.
+Repositório com os códigos e exercícios desenvolvidos durante o curso de **Java Orientado a Objetos** do professor Gustavo Guanabara do canal Curso Em Video.
 
-O curso aborda os principais conceitos de **Programação Orientada a Objetos (POO)** utilizando a linguagem Java, como classes, objetos, encapsulamento, herança e polimorfismo. :contentReference[oaicite:2]{index=2}
+O curso aborda os principais conceitos de **Programação Orientada a Objetos (POO)** utilizando a linguagem Java, como classes, objetos, encapsulamento, herança e polimorfismo.
 
 ## 📚 Conteúdos estudados
 
